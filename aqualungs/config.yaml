@@ -1,0 +1,17 @@
+email:
+  sender: no-reply@arxiv.org
+  scopes:
+    - https://www.googleapis.com/auth/gmail.readonly
+
+downloader:
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+  max_messages: 2
+  timeout: 30
+  delay_seconds:
+    min: 5
+    max: 7
+  output_dir: ../data/articles
+
+database:
+  path: ../data/articles.db
